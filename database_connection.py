@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
-SQLALCHAMY_DATABASE_URL = 'mysql+pymysql://root:root123@localhost:3306/riders'
+SQLALCHAMY_DATABASE_URL = 'sqlite:///fooddelivery.db'
 engine = create_engine(SQLALCHAMY_DATABASE_URL)
 
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)
